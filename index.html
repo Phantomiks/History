@@ -57,42 +57,6 @@
             transform: rotateY(180deg);
         }
         
-        .swipe-left {
-            animation: swipeLeft 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-        }
-        
-        .swipe-right {
-            animation: swipeRight 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-        }
-        
-        .swipe-left-in {
-            animation: swipeLeftIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-        }
-        
-        .swipe-right-in {
-            animation: swipeRightIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-        }
-        
-        @keyframes swipeLeft {
-            0% { transform: translateX(0) rotateY(0deg); opacity: 1; }
-            100% { transform: translateX(-120%) rotateY(-45deg); opacity: 0; }
-        }
-        
-        @keyframes swipeRight {
-            0% { transform: translateX(0) rotateY(0deg); opacity: 1; }
-            100% { transform: translateX(120%) rotateY(45deg); opacity: 0; }
-        }
-        
-        @keyframes swipeLeftIn {
-            0% { transform: translateX(120%) rotateY(45deg); opacity: 0; }
-            100% { transform: translateX(0) rotateY(0deg); opacity: 1; }
-        }
-        
-        @keyframes swipeRightIn {
-            0% { transform: translateX(-120%) rotateY(-45deg); opacity: 0; }
-            100% { transform: translateX(0) rotateY(0deg); opacity: 1; }
-        }
-        
         .progress-bar {
             transition: width 0.3s ease;
         }
@@ -342,45 +306,231 @@
                         "id": 1,
                         "date": "862 год",
                         "event": "Призвание варягов",
-                        "description": "Согласно Повести временных лет, славянские и финно-угорские племена призвали варяжского князя Рюрика на княжение в Новгород. Это событие считается началом династии Рюриковичей и образования Древнерусского государства.",
                         "learned": false
                     },
                     {
                         "id": 2,
-                        "date": "882 год",
-                        "event": "Образование Киевской Руси",
-                        "description": "Князь Олег захватил Киев и объявил его матерью городов русских. Перенос столицы из Новгорода в Киев. Начало объединения восточнославянских племен под властью Киева.",
+                        "date": "864 год",
+                        "event": "Антинорманское восстание Вадима Храброго",
                         "learned": false
                     },
                     {
                         "id": 3,
-                        "date": "988 год",
-                        "event": "Крещение Руси",
-                        "description": "Князь Владимир Святославич принял христианство по византийскому образцу и начал крещение жителей Киева. Это событие укрепило международное положение Руси и способствовало развитию культуры, письменности и государственности.",
+                        "date": "882 год",
+                        "event": "Объединение Новгорода и Киева под властью князя Олега, убил Аскольд и Дира",
                         "learned": false
                     },
                     {
                         "id": 4,
-                        "date": "1019-1054 гг.",
-                        "event": "Правление Ярослава Мудрого",
-                        "description": "Расцвет Киевской Руси. Составление Русской Правды - первого письменного свода законов. Развитие культуры, архитектуры (Софийский собор в Киеве) и образования. Укрепление международных связей через династические браки.",
+                        "date": "907, 911 года",
+                        "event": "Походы Олега на Царьград (Константинополь) , успешно, заключение первого письменного договора в Восточной Европе",
                         "learned": false
                     },
                     {
                         "id": 5,
-                        "date": "1147 год",
-                        "event": "Первое упоминание Москвы",
-                        "description": "В Ипатьевской летописи впервые упоминается Москва в связи с приглашением суздальского князя Юрия Долгорукого новгород-северского князя Святослава Ольговича: Приди ко мне, брате, в Москов.",
+                        "date": "915 год",
+                        "event": "Первое столкновение с печенегами",
                         "learned": false
                     },
                     {
                         "id": 6,
-                        "date": "1223 год",
-                        "event": "Битва на Калке",
-                        "description": "Первое столкновение русских князей с монголо-татарами. Объединенное войско русских князей и половцев потерпело поражение от войск Чингисхана. Это было предвестие монгольского нашествия.",
+                        "date": "941, 944 года",
+                        "event": "Походы Игоря на Царьград ( 1- сожгли греческим огнём, 2- договор (успешно))",
+                        "learned": false
+                    },
+                    {
+                        "id": 7,
+                        "date": "945 год",
+                        "event": "Восстание Древлян (князь мал), убийство Игоря",
+                        "learned": false
+                    },
+                    {
+                        "id": 8,
+                        "date": "946 год",
+                        "event": "Налоговая реформа Ольги (уроки и погосты)",
+                        "learned": false
+                    },
+                    {
+                        "id": 9,
+                        "date": "957 год",
+                        "event": "Крещение Ольги в Константинополе",
+                        "learned": false
+                    },
+                    {
+                        "id": 10,
+                        "date": "965 год",
+                        "event": "Разгорится Хазарского Каганата Святославом, захват столиц Итиль и Саркел",
+                        "learned": false
+                    },
+                    {
+                        "id": 11,
+                        "date": "968 год",
+                        "event": "Осада печенегами Киева",
+                        "learned": false
+                    },
+                    {
+                        "id": 12,
+                        "date": "968-971 года",
+                        "event": "Участие Святослава в Болгаро-Византийском конфликте",
+                        "learned": false
+                    },
+                    {
+                        "id": 13,
+                        "date": "971 год",
+                        "event": "Битва при Доростоле",
+                        "learned": false
+                    },
+                    {
+                        "id": 14,
+                        "date": "978 год",
+                        "event": "Смерть Ярополка Святославича",
+                        "learned": false
+                    },
+                    {
+                        "id": 15,
+                        "date": "980 год",
+                        "event": "Языческая реформа Владимира",
+                        "learned": false
+                    },
+                    {
+                        "id": 16,
+                        "date": "988 год",
+                        "event": "Принятие христианства Владимиром в Херсонесе, начало крещения Руси",
+                        "learned": false
+                    },
+                    {
+                        "id": 17,
+                        "date": "1016 год",
+                        "event": "Начало составления Русской правды ( Правда Ярослава), вводится вира плата за убийство",
+                        "learned": false
+                    },
+                    {
+                        "id": 18,
+                        "date": "1019 год",
+                        "event": "Битва на Альте между Ярославом и Святополком Окаянным, победа Ярослава",
+                        "learned": false
+                    },
+                    {
+                        "id": 19,
+                        "date": "1024-1036 год",
+                        "event": "Разделение Киевской Руси между Ярославом и Мстиславом Тьмутараканским",
+                        "learned": false
+                    },
+                    {
+                        "id": 20,
+                        "date": "1036 год",
+                        "event": "Последнее столкновение с печенегами, в честь победы был заложен Софийский собор",
+                        "learned": false
+                    },
+                    {
+                        "id": 21,
+                        "date": "1068 год",
+                        "event": "Битва на Альте, поражение русских войск от половцев",
+                        "learned": false
+                    },
+                    {
+                        "id": 22,
+                        "date": "1097 год",
+                        "event": "Любеческий съезд",
+                        "learned": false
+                    },
+                    {
+                        "id": 23,
+                        "date": "1113 год",
+                        "event": "Антиростовщическое восстание в Киеве, создание устава Мономаха",
+                        "learned": false
+                    },
+                    {
+                        "id": 24,
+                        "date": "1054 год",
+                        "event": "Первый митрополит на Руси, русского происхождения Иларион ( Слово о законе и благодате)",
+                        "learned": false
+                    },
+                    {
+                        "id": 25,
+                        "date": "1111, 1113",
+                        "event": "Походы на половцев Мономаха",
+                        "learned": false
+                    },
+                    {
+                        "id": 26,
+                        "date": "1132 год",
+                        "event": "Начало феодальной раздробленности Руси",
+                        "learned": false
+                    },
+                    {
+                        "id": 27,
+                        "date": "1147 год",
+                        "event": "Первое упоминание о Москве в Ипатьевской летописи",
+                        "learned": false
+                    },
+                    {
+                        "id": 28,
+                        "date": "1155 год",
+                        "event": "Переезд Андрея Боголюбского из Вышгорода во Владимир",
+                        "learned": false
+                    },
+                    {
+                        "id": 29,
+                        "date": "1169 год",
+                        "event": "Захват Андреем Боголюбским Киева",
+                        "learned": false
+                    },
+                    {
+                        "id": 30,
+                        "date": "1199 год",
+                        "event": "Объединение Волынского и Галицкого княжества при Романе Мстиславовиче",
+                        "learned": false
+                    },
+                    {
+                        "id": 31,
+                        "date": "1201 год",
+                        "event": "Появление ордена Меченосцев в Прибалтике. Основание Риги",
+                        "learned": false
+                    },
+                    {
+                        "id": 32,
+                        "date": "1206 год",
+                        "event": "Курултай на реке Онон о походе монголов на Запад. Тямучин был избран Чингисханом",
+                        "learned": false
+                    },
+                    {
+                        "id": 33,
+                        "date": "1211 год",
+                        "event": "Поход монголов в Китай, взяли стенобитные орудия и другие приспособления для ведения войн",
+                        "learned": false
+                    },
+                    {
+                        "id": 34,
+                        "date": "31 мая 1223 год",
+                        "event": "Битва на реке Калка, Мстислав Удалой , Мстислав Черниговский, Мстислав Киевский , завоевательный поход Субидэя и Джубэ",
+                        "learned": false
+                    },
+                    {
+                        "id": 35,
+                        "date": "Декабрь 1237- март 1238",
+                        "event": "Первый завоевательный поход Батыя на Северо-Восточную Русь",
+                        "learned": false
+                    },
+                    {
+                        "id": 36,
+                        "date": "Конец Осени 1239-март 1240",
+                        "event": "Второй завоевательный поход Батыя на Юго-Западную Русь",
+                        "learned": false
+                    },
+                    {
+                        "id": 37,
+                        "date": "4 марта 1238 год",
+                        "event": "Битва на реке Сить, между войсками Юрия Всеволодовича( сына Всеволода Большое Гнездо) и отряда Бурундая (темник Батыя)",
+                        "learned": false
+                    },
+                    {
+                        "id": 38,
+                        "date": "15 июля 1240",
+                        "event": "Невская битва, против Шведов",
                         "learned": false
                     }
-                ]
+            ]
             },
             "mongol-yoke": {
                 "id": "mongol-yoke",
@@ -644,18 +794,8 @@
         function showPreviousCard() {
             if (currentState.currentCardIndex > 0) {
                 const period = historyPeriods[currentState.currentPeriod];
-                flashcard.classList.add("swipe-right");
-                
-                setTimeout(() => {
-                    currentState.currentCardIndex--;
-                    flashcard.classList.remove("swipe-right");
-                    flashcard.classList.add("swipe-right-in");
-                    showCurrentCard();
-                    
-                    setTimeout(() => {
-                        flashcard.classList.remove("swipe-right-in");
-                    }, 500);
-                }, 500);
+                currentState.currentCardIndex--;
+                showCurrentCard();
             }
         }
 
@@ -663,18 +803,8 @@
         function showNextCard() {
             const period = historyPeriods[currentState.currentPeriod];
             if (currentState.currentCardIndex < period.cards.length - 1) {
-                flashcard.classList.add("swipe-left");
-                
-                setTimeout(() => {
-                    currentState.currentCardIndex++;
-                    flashcard.classList.remove("swipe-left");
-                    flashcard.classList.add("swipe-left-in");
-                    showCurrentCard();
-                    
-                    setTimeout(() => {
-                        flashcard.classList.remove("swipe-left-in");
-                    }, 500);
-                }, 500);
+                currentState.currentCardIndex++;
+                showCurrentCard();
             }
         }
 
@@ -765,45 +895,182 @@
         // Setup swipe navigation for cards
         function setupSwipeNavigation() {
             const container = document.getElementById("flashcardContainer");
+            const flashcardContainer = document.getElementById("flashcardContainer");
             let touchStartX = 0;
             let touchStartY = 0;
+            let currentX = 0;
+            let currentY = 0;
+            let velocityX = 0;
+            let velocityY = 0;
+            let lastX = 0;
+            let lastY = 0;
+            let lastTime = 0;
             let isAnimating = false;
+            let hasMovedCard = false;
             
             container.addEventListener("touchstart", (e) => {
                 if (isAnimating) return;
+                
                 touchStartX = e.touches[0].clientX;
                 touchStartY = e.touches[0].clientY;
+                currentX = 0;
+                currentY = 0;
+                lastX = touchStartX;
+                lastY = touchStartY;
+                lastTime = Date.now();
+                hasMovedCard = false;
+                
+                // Remove transition for smooth dragging
+                flashcard.style.transition = "none";
             });
             
             container.addEventListener("touchmove", (e) => {
-                const deltaX = e.touches[0].clientX - touchStartX;
-                const deltaY = e.touches[0].clientY - touchStartY;
+                if (isAnimating) return;
                 
-                // Only handle horizontal swipes (not vertical)
-                if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                const currentTouchX = e.touches[0].clientX;
+                const currentTouchY = e.touches[0].clientY;
+                
+                // Calculate movement from start position
+                currentX = currentTouchX - touchStartX;
+                currentY = currentTouchY - touchStartY;
+                
+                // Check if user has actually moved (more than 5px)
+                if (Math.abs(currentX) > 5 || Math.abs(currentY) > 5) {
+                    hasMovedCard = true;
                     e.preventDefault();
+                }
+                
+                if (hasMovedCard) {
+                    // Calculate velocity
+                    const now = Date.now();
+                    const timeDelta = Math.max(now - lastTime, 1);
+                    
+                    if (timeDelta > 0) {
+                        velocityX = (currentTouchX - lastX) / timeDelta;
+                        velocityY = (currentTouchY - lastY) / timeDelta;
+                    }
+                    
+                    lastX = currentTouchX;
+                    lastY = currentTouchY;
+                    lastTime = now;
+                    
+                    // Calculate distance from center
+                    const distance = Math.sqrt(currentX * currentX + currentY * currentY);
+                    
+                    // Calculate opacity based on distance
+                    const maxDistance = 250;
+                    const opacity = Math.max(0.2, 1 - (distance / maxDistance));
+                    
+                    // Apply transform
+                    flashcard.style.transform = `translate(${currentX}px, ${currentY}px)`;
+                    flashcard.style.opacity = opacity;
                 }
             });
             
             container.addEventListener("touchend", (e) => {
                 if (isAnimating) return;
                 
-                const deltaX = e.changedTouches[0].clientX - touchStartX;
-                const threshold = 50;
+                if (!hasMovedCard) {
+                    return;
+                }
                 
-                if (Math.abs(deltaX) > threshold) {
+                const finalX = currentX;
+                const finalY = currentY;
+                const distance = Math.sqrt(finalX * finalX + finalY * finalY);
+                
+                // Threshold for triggering card change (in pixels)
+                const changeThreshold = 100;
+                
+                // Inertia - if user swiped with velocity
+                const inertiaX = velocityX * 500; // Multiply velocity by time duration
+                const inertiaY = velocityY * 500;
+                const totalSwipeX = finalX + inertiaX;
+                const totalSwipeY = finalY + inertiaY;
+                
+                // Check if swipe is primarily vertical (for flip) or horizontal (for navigation)
+                const isVerticalSwipe = Math.abs(totalSwipeY) > Math.abs(totalSwipeX);
+                const isHorizontalSwipe = Math.abs(totalSwipeX) > Math.abs(totalSwipeY);
+                
+                // Handle vertical swipe - flip card
+                if (isVerticalSwipe && Math.abs(totalSwipeY) > changeThreshold) {
                     isAnimating = true;
-                    if (deltaX > 0) {
-                        // Swiped right - show previous card
-                        showPreviousCard();
-                    } else {
-                        // Swiped left - show next card
-                        showNextCard();
-                    }
+                    flipCard();
                     
                     setTimeout(() => {
                         isAnimating = false;
-                    }, 500);
+                    }, 600);
+                    
+                    // Return card to center with animation
+                    flashcard.style.transition = "all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                    flashcard.style.transform = `translate(0, 0)`;
+                    flashcard.style.opacity = "1";
+                    
+                    return;
+                }
+                
+                // Handle horizontal swipe - change card
+                if (isHorizontalSwipe && Math.abs(totalSwipeX) > changeThreshold) {
+                    isAnimating = true;
+                    flashcard.style.transition = "all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                    
+                    if (totalSwipeX > 0) {
+                        // Swiped right - show previous card
+                        flashcard.style.transform = `translate(${window.innerWidth}px, ${finalY}px)`;
+                        flashcard.style.opacity = "0";
+                        
+                        setTimeout(() => {
+                            flashcard.style.transition = "none";
+                            flashcard.style.transform = `translate(-${window.innerWidth}px, 0)`;
+                            flashcard.style.opacity = "0";
+                            showPreviousCard();
+                            
+                            // Animate new card in from left
+                            setTimeout(() => {
+                                flashcard.style.transition = "all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                                flashcard.style.transform = `translate(0, 0)`;
+                                flashcard.style.opacity = "1";
+                            }, 10);
+                            
+                            setTimeout(() => {
+                                flashcard.style.transition = "none";
+                                isAnimating = false;
+                            }, 610);
+                        }, 600);
+                    } else {
+                        // Swiped left - show next card
+                        flashcard.style.transform = `translate(-${window.innerWidth}px, ${finalY}px)`;
+                        flashcard.style.opacity = "0";
+                        
+                        setTimeout(() => {
+                            flashcard.style.transition = "none";
+                            flashcard.style.transform = `translate(${window.innerWidth}px, 0)`;
+                            flashcard.style.opacity = "0";
+                            showNextCard();
+                            
+                            // Animate new card in from right
+                            setTimeout(() => {
+                                flashcard.style.transition = "all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                                flashcard.style.transform = `translate(0, 0)`;
+                                flashcard.style.opacity = "1";
+                            }, 10);
+                            
+                            setTimeout(() => {
+                                flashcard.style.transition = "none";
+                                isAnimating = false;
+                            }, 610);
+                        }, 600);
+                    }
+                } else {
+                    // Return card to center if movement wasn't enough
+                    isAnimating = true;
+                    flashcard.style.transition = "all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                    flashcard.style.transform = `translate(0, 0)`;
+                    flashcard.style.opacity = "1";
+                    
+                    setTimeout(() => {
+                        flashcard.style.transition = "none";
+                        isAnimating = false;
+                    }, 400);
                 }
             });
         }
