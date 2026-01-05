@@ -82,87 +82,63 @@
 
         <main class="flex-1 container mx-auto px-4 py-8">
             <div class="mb-10">
-                <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Выберите период</h2>
+                <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Выберите раздел</h2>
                 
                 <div class="grid grid-cols-1 gap-4">
-                    <button class="period-card bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-primary p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="kievan-rus">
+                    <button id="datesBtn" class="period-card bg-gradient-to-r from-indigo-50 to-indigo-100 border-l-4 border-indigo-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]">
                         <div class="flex items-center">
-                            <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-calendar text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Даты</h3>
+                                <p class="text-gray-600">Карточки по эпохам</p>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-gray-700">Все исторические периоды и события</p>
+                    </button>
+                    
+                    <button id="termsBtn" class="period-card bg-gradient-to-r from-teal-50 to-teal-100 border-l-4 border-teal-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]">
+                        <div class="flex items-center">
+                            <div class="bg-teal-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-book text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Термины</h3>
+                                <p class="text-gray-600">Определения и понятия</p>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-gray-700">Исторические термины и определения</p>
+                    </button>
+
+                    <button id="personalitiesBtn" class="period-card bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]">
+                        <div class="flex items-center">
+                            <div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
                                 <i class="fas fa-crown text-xl"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-gray-800">Киевская Русь</h3>
-                                <p class="text-gray-600">862-1240 гг.</p>
+                                <h3 class="text-xl font-bold text-gray-800">Личности</h3>
+                                <p class="text-gray-600">Выдающиеся люди России</p>
                             </div>
                         </div>
-                        <p class="mt-3 text-gray-700">Образование древнерусского государства, правление Рюриковичей</p>
-                    </button>
-                    
-                    <button class="period-card bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-secondary p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="mongol-yoke">
-                        <div class="flex items-center">
-                            <div class="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-horse text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-800">Монгольское иго</h3>
-                                <p class="text-gray-600">1240-1480 гг.</p>
-                            </div>
-                        </div>
-                        <p class="mt-3 text-gray-700">Зависимость русских земель от Золотой Орды</p>
-                    </button>
-                    
-                    <button class="period-card bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-accent p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="muscovy">
-                        <div class="flex items-center">
-                            <div class="bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-landmark text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-800">Московское царство</h3>
-                                <p class="text-gray-600">1480-1721 гг.</p>
-                            </div>
-                        </div>
-                        <p class="mt-3 text-gray-700">Объединение русских земель вокруг Москвы</p>
-                    </button>
-                    
-                    <button class="period-card bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="empire">
-                        <div class="flex items-center">
-                            <div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-empire text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-800">Российская империя</h3>
-                                <p class="text-gray-600">1721-1917 гг.</p>
-                            </div>
-                        </div>
-                        <p class="mt-3 text-gray-700">Правление Петра I, Екатерины II, развитие империи</p>
-                    </button>
-                    
-                    <button class="period-card bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="soviet">
-                        <div class="flex items-center">
-                            <div class="bg-yellow-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-industry text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-800">Советский период</h3>
-                                <p class="text-gray-600">1917-1991 гг.</p>
-                            </div>
-                        </div>
-                        <p class="mt-3 text-gray-700">СССР, Великая Отечественная война, холодная война</p>
-                    </button>
-                    
-                    <button class="period-card bg-gradient-to-r from-gray-50 to-gray-100 border-l-4 border-gray-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="modern">
-                        <div class="flex items-center">
-                            <div class="bg-gray-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-flag text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-800">Современная Россия</h3>
-                                <p class="text-gray-600">1991-настоящее время</p>
-                            </div>
-                        </div>
-                        <p class="mt-3 text-gray-700">Распад СССР, становление Российской Федерации</p>
+                        <p class="mt-3 text-gray-700">Правители, полководцы, деятели культуры</p>
                     </button>
                 </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-300">
+                <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Проверь свои знания</h2>
+                <button id="startTestBtn" class="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white p-6 rounded-xl shadow-md text-center transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]">
+                    <div class="flex items-center justify-center">
+                        <div class="bg-white text-orange-500 w-14 h-14 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-clipboard-list text-2xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <h3 class="text-2xl font-bold">Тест</h3>
+                            <p class="text-orange-100">Вопросы по всем эпохам</p>
+                        </div>
+                    </div>
+                </button>
             </div>
             
             <div class="mt-12">
@@ -196,6 +172,411 @@
                 <p>Для изучения истории России. Нажмите на период для начала.</p>
             </div>
         </footer>
+    </div>
+
+    <!-- Terms Screen -->
+    <div id="termsScreen" class="min-h-screen flex flex-col hidden">
+        <header class="bg-teal-600 text-white py-5 px-4 rounded-b-3xl shadow-lg">
+            <div class="container mx-auto flex items-center">
+                <button id="backFromTerms" class="text-white text-2xl mr-4">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div>
+                    <h2 class="text-2xl font-bold font-serif">Термины</h2>
+                    <p class="text-teal-100 text-sm">Исторические определения</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1 container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 gap-4">
+                <button class="period-card bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-primary p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-category="political">
+                    <div class="flex items-center">
+                        <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-university text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Политические термины</h3>
+                            <p class="text-gray-600">Государство, власть, управление</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-gray-700">Термины, относящиеся к политическому устройству</p>
+                </button>
+                
+                <button class="period-card bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-secondary p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-category="military">
+                    <div class="flex items-center">
+                        <div class="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-shield-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Военные термины</h3>
+                            <p class="text-gray-600">Оружие, тактика, армия</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-gray-700">Термины, связанные с военным делом</p>
+                </button>
+                
+                <button class="period-card bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-accent p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-category="social">
+                    <div class="flex items-center">
+                        <div class="bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-users text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Социальные термины</h3>
+                            <p class="text-gray-600">Сословия, классы, культура</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-gray-700">Термины, описывающие общество</p>
+                </button>
+                
+                <button class="period-card bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-category="economic">
+                    <div class="flex items-center">
+                        <div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-coins text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Экономические термины</h3>
+                            <p class="text-gray-600">Торговля, хозяйство, налоги</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-gray-700">Термины экономического развития</p>
+                </button>
+                
+                <button class="period-card bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-category="religion">
+                    <div class="flex items-center">
+                        <div class="bg-yellow-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-cross text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Религиозные термины</h3>
+                            <p class="text-gray-600">Вера, церковь, обряды</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-gray-700">Термины, связанные с религией</p>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Dates Categories Screen -->
+    <div id="datesScreen" class="min-h-screen flex flex-col hidden">
+        <header class="bg-indigo-600 text-white py-5 px-4 rounded-b-3xl shadow-lg">
+            <div class="container mx-auto flex items-center">
+                <button id="backFromDates" class="text-white text-2xl mr-4">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div>
+                    <h2 class="text-2xl font-bold font-serif">Даты</h2>
+                    <p class="text-indigo-100 text-sm">Выберите эпоху</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1 container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 gap-4">
+                <button class="period-card bg-gradient-to-r from-blue-50 to-blue-100 border-l-4 border-primary p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="kievan-rus">
+                    <div class="flex items-center">
+                        <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-crown text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Киевская Русь</h3>
+                            <p class="text-gray-600">862-1240 гг.</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-gray-700">Образование древнерусского государства, правление Рюриковичей</p>
+                </button>
+                
+                <button class="period-card bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-secondary p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="mongol-yoke">
+                    <div class="flex items-center">
+                        <div class="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-horse text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Монгольское иго</h3>
+                            <p class="text-gray-600">1240-1480 гг.</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-gray-700">Зависимость русских земель от Золотой Орды</p>
+                </button>
+                
+                <button class="period-card bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-accent p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="muscovy">
+                    <div class="flex items-center">
+                        <div class="bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-landmark text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Московское царство</h3>
+                            <p class="text-gray-600">1480-1721 гг.</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-gray-700">Объединение русских земель вокруг Москвы</p>
+                </button>
+                
+                <button class="period-card bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="empire">
+                    <div class="flex items-center">
+                        <div class="bg-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-empire text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Российская империя</h3>
+                            <p class="text-gray-600">1721-1917 гг.</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-gray-700">Правление Петра I, Екатерины II, развитие империи</p>
+                </button>
+                
+                <button class="period-card bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="soviet">
+                    <div class="flex items-center">
+                        <div class="bg-yellow-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-industry text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Советский период</h3>
+                            <p class="text-gray-600">1917-1991 гг.</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-gray-700">СССР, Великая Отечественная война, холодная война</p>
+                </button>
+                
+                <button class="period-card bg-gradient-to-r from-gray-50 to-gray-100 border-l-4 border-gray-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-period="modern">
+                    <div class="flex items-center">
+                        <div class="bg-gray-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-flag text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Современная Россия</h3>
+                            <p class="text-gray-600">1991-настоящее время</p>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-gray-700">Распад СССР, становление Российской Федерации</p>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Terms Flashcard Screen -->
+    <div id="termsFlashcardScreen" class="min-h-screen flex flex-col hidden">
+        <header class="bg-teal-600 text-white py-5 px-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <button id="backToMenuFromTerms" class="text-white text-2xl">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div class="text-center">
+                    <h2 id="termsCategoryTitle" class="text-xl font-bold">Политические термины</h2>
+                    <p id="termsCounter" class="text-teal-100 text-sm">Термин 1 из 10</p>
+                </div>
+                <div class="w-8"></div>
+            </div>
+            
+            <div class="container mx-auto mt-4">
+                <div class="flex justify-between text-sm text-teal-100 mb-1">
+                    <span>Прогресс</span>
+                    <span id="termsProgressPercent">10%</span>
+                </div>
+                <div class="h-2 bg-teal-300 rounded-full overflow-hidden">
+                    <div id="termsProgressBar" class="h-full bg-white rounded-full progress-bar" style="width: 10%"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1 container mx-auto px-4 py-8 flex flex-col items-center justify-center">
+            <div class="w-full max-w-md">
+                <!-- Term Flashcard Container -->
+                <div id="termFlashcardContainer" class="relative w-full h-96 mb-8 touch-action-none">
+                    <div id="termFlashcard" class="card-flip w-full h-full absolute">
+                        <!-- Front of Card (Term) -->
+                        <div class="card-front bg-card rounded-2xl card-shadow p-6 flex flex-col items-center justify-center border-2 border-gray-100">
+                            <div class="text-center">
+                                <div class="text-sm text-gray-500 mb-2">Термин</div>
+                                <div id="termName" class="text-3xl font-bold text-teal-600 mb-4 font-serif">Боярство</div>
+                                <div class="text-gray-600 mb-6">Нажмите на карточку, чтобы увидеть определение</div>
+                                <div class="text-gray-400 text-sm">
+                                    <i class="fas fa-hand-point-up mr-2"></i>Коснитесь для переворота
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Back of Card (Definition) -->
+                        <div class="card-back bg-gradient-to-br from-teal-50 to-white rounded-2xl card-shadow p-6 flex flex-col items-center justify-center border-2 border-teal-100">
+                            <div class="text-center">
+                                <div class="text-sm text-gray-500 mb-2">Определение</div>
+                                <div id="termDefinition" class="text-gray-700 text-lg leading-relaxed">
+                                    Класс феодальной знати в Древней Руси, занимавший привилегированное положение в обществе и владевший землей.
+                                </div>
+                                <div class="mt-6 text-gray-400 text-sm">
+                                    <i class="fas fa-redo mr-2"></i>Коснитесь еще раз, чтобы вернуться
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Term Management Buttons -->
+                <div class="flex flex-col items-center gap-6 mt-12">
+                    <div class="flex space-x-4">
+                        <button id="markTermAsLearned" class="bg-green-100 text-green-800 px-6 py-3 rounded-lg flex items-center transition-all duration-300 hover:bg-green-200 active:scale-95">
+                            <i class="fas fa-check mr-2"></i>Выучено
+                        </button>
+                        <button id="resetTermProgress" class="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg flex items-center transition-all duration-300 hover:bg-gray-200 active:scale-95">
+                            <i class="fas fa-redo mr-2"></i>Сбросить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Personalities Screen -->
+    <div id="personalitiesScreen" class="min-h-screen flex flex-col hidden">
+        <header class="bg-purple-600 text-white py-5 px-4 rounded-b-3xl shadow-lg">
+            <div class="container mx-auto flex items-center">
+                <button id="backFromPersonalities" class="text-white text-2xl mr-4">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div>
+                    <h2 class="text-2xl font-bold font-serif">Личности</h2>
+                    <p class="text-purple-100 text-sm">Выдающиеся люди России</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1 container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 gap-4">
+                <button class="period-card bg-gradient-to-r from-indigo-50 to-indigo-100 border-l-4 border-indigo-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-category="rulers">
+                    <div class="flex items-center">
+                        <div class="bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-crown text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Правители</h3>
+                            <p class="text-gray-600">Князья и цари России</p>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="period-card bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-red-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-category="military">
+                    <div class="flex items-center">
+                        <div class="bg-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-shield-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Полководцы</h3>
+                            <p class="text-gray-600">Военные герои</p>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="period-card bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-category="culture">
+                    <div class="flex items-center">
+                        <div class="bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-pen-fancy text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Деятели культуры</h3>
+                            <p class="text-gray-600">Писатели, композиторы, художники</p>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="period-card bg-gradient-to-r from-yellow-50 to-yellow-100 border-l-4 border-yellow-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-category="scientists">
+                    <div class="flex items-center">
+                        <div class="bg-yellow-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-flask text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Ученые</h3>
+                            <p class="text-gray-600">Первопроходцы и исследователи</p>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="period-card bg-gradient-to-r from-pink-50 to-pink-100 border-l-4 border-pink-600 p-5 rounded-xl shadow-md text-left transition-all duration-300 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]" data-category="saints">
+                    <div class="flex items-center">
+                        <div class="bg-pink-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-star text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Святые</h3>
+                            <p class="text-gray-600">Духовные и религиозные деятели</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Personalities Flashcard Screen -->
+    <div id="personalitiesFlashcardScreen" class="min-h-screen flex flex-col hidden">
+        <header class="bg-purple-600 text-white py-5 px-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <button id="backToMenuFromPersonalities" class="text-white text-2xl">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div class="text-center">
+                    <h2 id="personalitiesCategoryTitle" class="text-xl font-bold">Правители</h2>
+                    <p id="personalitiesCounter" class="text-purple-100 text-sm">Личность 1 из 10</p>
+                </div>
+                <div class="w-8"></div>
+            </div>
+            
+            <div class="container mx-auto mt-4">
+                <div class="flex justify-between text-sm text-purple-100 mb-1">
+                    <span>Прогресс</span>
+                    <span id="personalitiesProgressPercent">10%</span>
+                </div>
+                <div class="h-2 bg-purple-300 rounded-full overflow-hidden">
+                    <div id="personalitiesProgressBar" class="h-full bg-white rounded-full progress-bar" style="width: 10%"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1 container mx-auto px-4 py-8 flex flex-col items-center justify-center">
+            <div class="w-full max-w-md">
+                <!-- Personality Flashcard Container -->
+                <div id="personalityFlashcardContainer" class="relative w-full h-96 mb-8 touch-action-none">
+                    <div id="personalityFlashcard" class="card-flip w-full h-full absolute">
+                        <!-- Front of Card (Name) -->
+                        <div class="card-front bg-card rounded-2xl card-shadow p-6 flex flex-col items-center justify-center border-2 border-gray-100">
+                            <div class="text-center">
+                                <div class="text-sm text-gray-500 mb-2">Личность</div>
+                                <div id="personalityName" class="text-3xl font-bold text-purple-600 mb-2 font-serif">Владимир Мономах</div>
+                                <div id="personalityDates" class="text-lg text-gray-600 mb-4">1053—1125</div>
+                                <div class="text-gray-600 mb-6">Нажмите на карточку, чтобы увидеть биографию</div>
+                                <div class="text-gray-400 text-sm">
+                                    <i class="fas fa-hand-point-up mr-2"></i>Коснитесь для переворота
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Back of Card (Biography) -->
+                        <div class="card-back bg-gradient-to-br from-purple-50 to-white rounded-2xl card-shadow p-6 flex flex-col items-center justify-center border-2 border-purple-100">
+                            <div class="text-center">
+                                <div class="text-sm text-gray-500 mb-2">Биография</div>
+                                <div id="personalityBiography" class="text-gray-700 text-lg leading-relaxed">
+                                    Великий князь киевский, известный своим справедливым правлением и литературными трудами, включая "Поучение детям".
+                                </div>
+                                <div class="mt-6 text-gray-400 text-sm">
+                                    <i class="fas fa-redo mr-2"></i>Коснитесь еще раз, чтобы вернуться
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Personality Management Buttons -->
+                <div class="flex flex-col items-center gap-6 mt-12">
+                    <div class="flex space-x-4">
+                        <button id="markPersonalityAsLearned" class="bg-green-100 text-green-800 px-6 py-3 rounded-lg flex items-center transition-all duration-300 hover:bg-green-200 active:scale-95">
+                            <i class="fas fa-check mr-2"></i>Выучено
+                        </button>
+                        <button id="resetPersonalityProgress" class="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg flex items-center transition-all duration-300 hover:bg-gray-200 active:scale-95">
+                            <i class="fas fa-redo mr-2"></i>Сбросить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 
     <!-- Flashcard Screen -->
@@ -266,6 +647,71 @@
                             <i class="fas fa-redo mr-2"></i>Сбросить
                         </button>
                     </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Test Screen -->
+    <div id="testScreen" class="min-h-screen flex flex-col hidden">
+        <header class="bg-gradient-to-r from-orange-500 to-red-500 text-white py-5 px-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <button id="backToMenuFromTest" class="text-white text-2xl">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div class="text-center">
+                    <h2 id="testTitle" class="text-xl font-bold">Тест</h2>
+                    <p id="testCounter" class="text-orange-100 text-sm">Вопрос 1 из 10</p>
+                </div>
+                <div class="w-8"></div>
+            </div>
+            
+            <div class="container mx-auto mt-4">
+                <div class="flex justify-between text-sm text-orange-100 mb-1">
+                    <span>Прогресс</span>
+                    <span id="testProgressPercent">10%</span>
+                </div>
+                <div class="h-2 bg-orange-300 rounded-full overflow-hidden">
+                    <div id="testProgressBar" class="h-full bg-white rounded-full progress-bar" style="width: 10%"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1 container mx-auto px-4 py-8 flex flex-col items-center justify-center">
+            <div class="w-full max-w-md">
+                <!-- Question Container -->
+                <div id="questionContainer" class="bg-white rounded-2xl p-6 shadow-lg mb-6">
+                    <h3 id="questionText" class="text-xl font-bold text-gray-800 mb-6">Когда произошло призвание варягов?</h3>
+                    
+                    <div id="answersContainer" class="space-y-3">
+                        <!-- Answers will be generated here -->
+                    </div>
+                </div>
+                
+                <!-- Result Screen -->
+                <div id="resultScreen" class="hidden bg-white rounded-2xl p-6 shadow-lg mb-6 text-center">
+                    <i id="resultIcon" class="fas fa-check-circle text-6xl text-green-500 mb-4"></i>
+                    <h3 id="resultText" class="text-2xl font-bold text-gray-800 mb-2">Правильно!</h3>
+                    <p id="resultMessage" class="text-gray-600 mb-6">Отличный ответ!</p>
+                    <button id="nextQuestionBtn" class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium transition-all duration-300 hover:bg-blue-700 active:scale-95">
+                        Следующий вопрос
+                    </button>
+                </div>
+                
+                <!-- Test Complete Screen -->
+                <div id="testCompleteScreen" class="hidden bg-white rounded-2xl p-6 shadow-lg mb-6 text-center">
+                    <i class="fas fa-trophy text-6xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Тест завершен!</h3>
+                    <div class="my-6">
+                        <div class="text-5xl font-bold text-blue-600 mb-2" id="finalScore">8/10</div>
+                        <div class="text-gray-600 text-lg">Ваш результат</div>
+                    </div>
+                    <button id="retakeTestBtn" class="w-full bg-orange-500 text-white py-3 rounded-lg font-medium transition-all duration-300 hover:bg-orange-600 active:scale-95">
+                        Пройти тест заново
+                    </button>
+                    <button id="returnToMenuBtn" class="w-full bg-gray-100 text-gray-800 py-3 rounded-lg font-medium mt-3 transition-all duration-300 hover:bg-gray-200 active:scale-95">
+                        Вернуться в меню
+                    </button>
                 </div>
             </div>
         </main>
@@ -665,6 +1111,267 @@
             }
         };
 
+        // Test data with questions
+        // Terms data
+        const termsData = {
+            "political": {
+                "title": "Политические термины",
+                "terms": [
+                    {"id": 1, "name": "Боярство", "definition": "Класс феодальной знати в Древней Руси, занимавший привилегированное положение в обществе и владевший землей.", "learned": false},
+                    {"id": 2, "name": "Дружина", "definition": "Боевой отряд, окружающий князя; служила основой армии древних русских государств.", "learned": false},
+                    {"id": 3, "name": "Вече", "definition": "Народное собрание в Древней Руси для решения важных государственных и городских вопросов.", "learned": false},
+                    {"id": 4, "name": "Княжество", "definition": "Территория, управляемая князем; феодальное государство, возглавляемое представителем княжеского рода.", "learned": false},
+                    {"id": 5, "name": "Федерация", "definition": "Объединение нескольких земель под главенством одного князя.", "learned": false},
+                    {"id": 6, "name": "Иго", "definition": "Гнёт, подчинение одного государства другому; в русской истории - монгольское иго.", "learned": false},
+                    {"id": 7, "name": "Крепостное право", "definition": "Форма зависимости крестьян от помещика в России; наиболее развитая система крепостничества.", "learned": false},
+                    {"id": 8, "name": "Опричнина", "definition": "Политика террора, введённая Иваном IV; система управления с использованием личного войска царя.", "learned": false},
+                    {"id": 9, "name": "Сословие", "definition": "Социальный слой общества с определённым правовым положением и совокупностью прав и обязанностей.", "learned": false},
+                    {"id": 10, "name": "Самодержавие", "definition": "Форма правления, при которой вся власть сосредоточена в руках монарха.", "learned": false}
+                ]
+            },
+            "military": {
+                "title": "Военные термины",
+                "terms": [
+                    {"id": 1, "name": "Полк", "definition": "Военное подразделение; основная организационная единица в армии.", "learned": false},
+                    {"id": 2, "name": "Стрелец", "definition": "Профессиональный пехотинец России XVI-XVII веков, вооружённый пищалью (ружьём).", "learned": false},
+                    {"id": 3, "name": "Варяги", "definition": "Норманны, скандинавские воины и торговцы, приглашённые на Русь в IX веке.", "learned": false},
+                    {"id": 4, "name": "Половцы", "definition": "Кочевой народ, совершавший набеги на русские земли в XI-XII веках.", "learned": false},
+                    {"id": 5, "name": "Печенеги", "definition": "Кочевое племя, населявшее степи и часто воевавшее с древними русскими княжествами.", "learned": false},
+                    {"id": 6, "name": "Батый", "definition": "Монгольский полководец, возглавивший нашествие на Русь в 1237-1240 годах.", "learned": false},
+                    {"id": 7, "name": "Орда", "definition": "Ставка, лагерь кочевников; в истории России - Золотая Орда, монгольское государство.", "learned": false},
+                    {"id": 8, "name": "Казак", "definition": "Боевой конник, служивший в войске; позже - жители казачьих общин.", "learned": false},
+                    {"id": 9, "name": "Кольчуга", "definition": "Доспех из металлических колец, скреплённых между собой, используемый воинами Средневековья.", "learned": false},
+                    {"id": 10, "name": "Таран", "definition": "Военный инструмент для разрушения стен; также - боевой корабль с таранным носом.", "learned": false}
+                ]
+            },
+            "social": {
+                "title": "Социальные термины",
+                "terms": [
+                    {"id": 1, "name": "Крестьянство", "definition": "Сельское население, занимающееся земледелием; основной класс феодального общества.", "learned": false},
+                    {"id": 2, "name": "Сельская община", "definition": "Объединение крестьянских дворов для совместного использования земли и решения вопросов.", "learned": false},
+                    {"id": 3, "name": "Холоп", "definition": "Раб в Древней Руси; зависимое лицо, находившееся в полной собственности владельца.", "learned": false},
+                    {"id": 4, "name": "Закуп", "definition": "В Древней Руси - человек, попавший в долговое рабство за взятый заём.", "learned": false},
+                    {"id": 5, "name": "Челядь", "definition": "Рабы, слуги, зависимое население в Древней Руси.", "learned": false},
+                    {"id": 6, "name": "Пошлина", "definition": "Налог на товары, взимаемый при торговле; также - старинный обычай, установленный правом.", "learned": false},
+                    {"id": 7, "name": "Десятина", "definition": "Налог в размере одной десятой части доходов; также - церковный налог.", "learned": false},
+                    {"id": 8, "name": "Помещик", "definition": "Феодал, получивший землю (поместье) за государственную службу.", "learned": false},
+                    {"id": 9, "name": "Вотчина", "definition": "Земельное владение, переходившее по наследству; форма феодального землевладения.", "learned": false},
+                    {"id": 10, "name": "Поместье", "definition": "Земельное владение, предоставленное государством за военную или гражданскую службу.", "learned": false}
+                ]
+            },
+            "economic": {
+                "title": "Экономические термины",
+                "terms": [
+                    {"id": 1, "name": "Фольварк", "definition": "Хозяйство помещика; запашка землевладельца, обрабатываемая крепостными.", "learned": false},
+                    {"id": 2, "name": "Артель", "definition": "Объединение людей для совместной работы; кооперативное предприятие.", "learned": false},
+                    {"id": 3, "name": "Ремесло", "definition": "Мастерство изготовления предметов вручную; профессиональная деятельность ремесленников.", "learned": false},
+                    {"id": 4, "name": "Гильдия", "definition": "Объединение ремесленников или купцов для защиты своих интересов.", "learned": false},
+                    {"id": 5, "name": "Ярмарка", "definition": "Периодическое собрание торговцев и покупателей для торговли; важный центр обмена товарами.", "learned": false},
+                    {"id": 6, "name": "Манифактура", "definition": "Мануфактурное предприятие, где используется принцип разделения труда.", "learned": false},
+                    {"id": 7, "name": "Монополия", "definition": "Исключительное право на что-либо; в России - королевские монополии на торговлю.", "learned": false},
+                    {"id": 8, "name": "Таможня", "definition": "Учреждение для сбора пошлин; граница, где проверяются товары.", "learned": false},
+                    {"id": 9, "name": "Урок", "definition": "В Древней Руси - установленный размер налога или повинности.", "learned": false},
+                    {"id": 10, "name": "Погост", "definition": "В Древней Руси - пункт сбора налогов и административный центр.", "learned": false}
+                ]
+            },
+            "religion": {
+                "title": "Религиозные термины",
+                "terms": [
+                    {"id": 1, "name": "Язычество", "definition": "Религия с поклонением многим богам; политеизм, распространённый в древних обществах.", "learned": false},
+                    {"id": 2, "name": "Крещение", "definition": "Обряд, при котором человек принимает христианскую веру; новое рождение в вере.", "learned": false},
+                    {"id": 3, "name": "Монастырь", "definition": "Религиозная община монахов; центр духовной жизни и культуры в Средневековье.", "learned": false},
+                    {"id": 4, "name": "Монах", "definition": "Человек, давший обет служения Богу и живущий в монастыре.", "learned": false},
+                    {"id": 5, "name": "Икона", "definition": "Изображение святого или святого события в христианском искусстве.", "learned": false},
+                    {"id": 6, "name": "Пастырь", "definition": "Священник, наставляющий верующих; духовный руководитель.", "learned": false},
+                    {"id": 7, "name": "Епископ", "definition": "Высшее духовное лицо; глава епархии в православной и католической церквях.", "learned": false},
+                    {"id": 8, "name": "Священство", "definition": "Сословие священнослужителей; духовенство.", "learned": false},
+                    {"id": 9, "name": "Миряне", "definition": "Люди, не принявшие духовный сан; мирские люди, живущие в миру.", "learned": false},
+                    {"id": 10, "name": "Раскол", "definition": "Отделение части церкви, несогласной с официальной доктриной; в России - раскол православной церкви.", "learned": false}
+                ]
+            }
+        };
+
+        const personalitiesData = {
+            "rulers": {
+                "title": "Правители России",
+                "personalities": [
+                    {"id": 1, "name": "Рюрик", "dates": "ок. 862—879", "biography": "Легендарный варяжский князь, основатель династии Рюриковичей и русского государства.", "learned": false},
+                    {"id": 2, "name": "Олег Вещий", "dates": "ок. 879—912", "biography": "Правитель Новгородской и Киевской Руси, объединивший русские земли и совершивший удачные походы на Константинополь.", "learned": false},
+                    {"id": 3, "name": "Владимир I Святославович", "dates": "958—1015", "biography": "Князь киевский, крестивший Русь в 988 году, способствовавший принятию христианства на Руси.", "learned": false},
+                    {"id": 4, "name": "Ярослав Мудрый", "dates": "978—1054", "biography": "Великий князь киевский, способствовавший культурному развитию Киевской Руси, создатель законов и школ.", "learned": false},
+                    {"id": 5, "name": "Владимир Мономах", "dates": "1053—1125", "biography": "Великий князь киевский, известный справедливым правлением и литературными трудами, включая 'Поучение детям'.", "learned": false},
+                    {"id": 6, "name": "Иван III Васильевич", "dates": "1440—1505", "biography": "Государь Всея Руси, объединивший русские земли и свергнувший монгольское иго в 1480 году.", "learned": false},
+                    {"id": 7, "name": "Иван IV Грозный", "dates": "1530—1584", "biography": "Первый русский царь, расширивший территорию государства, но жестоко подавлявший оппозицию.", "learned": false},
+                    {"id": 8, "name": "Петр I Великий", "dates": "1672—1725", "biography": "Российский император, проведший реформы, построивший Санкт-Петербург и создавший мощный военный флот.", "learned": false},
+                    {"id": 9, "name": "Екатерина II Великая", "dates": "1729—1796", "biography": "Российская императрица, расширившая территорию государства и проводившая политику просвещенного абсолютизма.", "learned": false},
+                    {"id": 10, "name": "Александр I", "dates": "1777—1825", "biography": "Российский император, победивший Наполеона и определивший новый мировой порядок в Европе.", "learned": false}
+                ]
+            },
+            "military": {
+                "title": "Полководцы России",
+                "personalities": [
+                    {"id": 1, "name": "Святослав Игоревич", "dates": "942—972", "biography": "Русский князь, прославленный полководец, совершивший военные походы на Хазарию, Болгарию и Византию.", "learned": false},
+                    {"id": 2, "name": "Александр Невский", "dates": "1221—1263", "biography": "Русский полководец, победивший немецких рыцарей на льду озера Чудского и защищавший Русь от западной агрессии.", "learned": false},
+                    {"id": 3, "name": "Дмитрий Донской", "dates": "1350—1389", "biography": "Московский князь, одержавший победу над монголами на Куликовом поле в 1380 году.", "learned": false},
+                    {"id": 4, "name": "Василий III Иванович", "dates": "1479—1533", "biography": "Московский государь, завершивший объединение русских земель и расширивший границы государства.", "learned": false},
+                    {"id": 5, "name": "Федор Иванович Номеров", "dates": "1535—1605", "biography": "Русский военачальник периода опричнины, осуществлявший политику террора.", "learned": false},
+                    {"id": 6, "name": "Александр Васильевич Суворов", "dates": "1730—1800", "biography": "Выдающийся русский полководец, не потерпевший ни одного поражения, прославленный своей тактикой и личным примером.", "learned": false},
+                    {"id": 7, "name": "Петр Иванович Багратион", "dates": "1765—1812", "biography": "Русский генерал грузинского происхождения, участник Отечественной войны 1812 года, смертельно раненный при Бородино.", "learned": false},
+                    {"id": 8, "name": "Михаил Илларионович Кутузов", "dates": "1745—1813", "biography": "Русский полководец, главнокомандующий русской армией в Отечественной войне 1812 года против Наполеона.", "learned": false},
+                    {"id": 9, "name": "Федор Федорович Ушаков", "dates": "1745—1817", "biography": "Русский адмирал, выдающийся флотоводец, не потерпевший ни одного морского боя и известный своей гуманностью.", "learned": false},
+                    {"id": 10, "name": "Павел Иванович Кутузов", "dates": "1783—1812", "biography": "Русский полководец, участник войн с Францией и военный реформатор, погибший в Отечественной войне.", "learned": false}
+                ]
+            },
+            "culture": {
+                "title": "Деятели культуры",
+                "personalities": [
+                    {"id": 1, "name": "Кирилл и Мефодий", "dates": "826—869 / 815—885", "biography": "Болгарские монахи, создатели славянской письменности, святые покровители славян.", "learned": false},
+                    {"id": 2, "name": "Ломоносов Михаил Васильевич", "dates": "1711—1765", "biography": "Русский ученый и поэт, основатель Московского университета, внесший вклад в развитие науки и образования.", "learned": false},
+                    {"id": 3, "name": "Пушкин Александр Сергеевич", "dates": "1799—1837", "biography": "Великий русский писатель и поэт, основоположник современного русского литературного языка, автор 'Евгения Онегина'.", "learned": false},
+                    {"id": 4, "name": "Лермонтов Михаил Юрьевич", "dates": "1814—1841", "biography": "Русский романтический поэт и писатель, автор 'Героя нашего времени' и 'Песни про купца Калашникова'.", "learned": false},
+                    {"id": 5, "name": "Толстой Лев Николаевич", "dates": "1828—1910", "biography": "Выдающийся русский писатель, автор 'Войны и мира' и 'Анны Карениной', философ и общественный деятель.", "learned": false},
+                    {"id": 6, "name": "Достоевский Федор Михайлович", "dates": "1821—1881", "biography": "Русский писатель, автор 'Преступления и наказания' и 'Братьев Карамазовых', исследователь человеческой психики.", "learned": false},
+                    {"id": 7, "name": "Чайковский Петр Ильич", "dates": "1840—1893", "biography": "Выдающийся русский композитор, автор балетов 'Лебединое озеро' и 'Щелкунчик', симфоний и опер.", "learned": false},
+                    {"id": 8, "name": "Репин Илья Ефимович", "dates": "1844—1930", "biography": "Великий русский живописец, создатель исторических и портретных произведений, один из мастеров реализма.", "learned": false},
+                    {"id": 9, "name": "Кандинский Василий Васильевич", "dates": "1866—1944", "biography": "Русский художник и теоретик искусства, пионер абстракционизма, автор 'О духовном в искусстве'.", "learned": false},
+                    {"id": 10, "name": "Стравинский Игорь Федорович", "dates": "1882—1971", "biography": "Русский композитор, революционер в музыке, автор балетов 'Весна священная' и 'Петрушка'.", "learned": false}
+                ]
+            },
+            "scientists": {
+                "title": "Ученые и исследователи",
+                "personalities": [
+                    {"id": 1, "name": "Максим Грек", "dates": "1475—1556", "biography": "Ученый монах, переводчик и публицист, критик некоторых аспектов русской церковной практики.", "learned": false},
+                    {"id": 2, "name": "Магницкий Леонтий Филипович", "dates": "1669—1739", "biography": "Русский математик, создатель первого русского учебника математики 'Арифметика'.", "learned": false},
+                    {"id": 3, "name": "Беринг Витус Йонассен", "dates": "1681—1741", "biography": "Датский мореход на русской службе, открывший пролив между Азией и Америкой (Берингов пролив).", "learned": false},
+                    {"id": 4, "name": "Крашенинников Степан Петрович", "dates": "1711—1755", "biography": "Русский естествоиспытатель и путешественник, исследователь Камчатки и Курильских островов.", "learned": false},
+                    {"id": 5, "name": "Менделеев Дмитрий Иванович", "dates": "1834—1907", "biography": "Русский химик, создатель периодической системы химических элементов, один из величайших ученых XIX века.", "learned": false},
+                    {"id": 6, "name": "Павлов Иван Петрович", "dates": "1849—1936", "biography": "Русский физиолог, создатель учения об условных рефлексах, лауреат Нобелевской премии.", "learned": false},
+                    {"id": 7, "name": "Циолковский Константин Эдуардович", "dates": "1857—1935", "biography": "Русский ученый и изобретатель, основоположник теории космонавтики и астронавтики.", "learned": false},
+                    {"id": 8, "name": "Жуковский Николай Егорович", "dates": "1847—1921", "biography": "Русский ученый, основатель современной аэродинамики и авиации, создатель теории полета.", "learned": false},
+                    {"id": 9, "name": "Курчатов Игорь Васильевич", "dates": "1903—1960", "biography": "Советский физик, руководитель советской ядерной программы, создатель первого советского ядерного реактора.", "learned": false},
+                    {"id": 10, "name": "Королев Сергей Павлович", "dates": "1906—1966", "biography": "Советский конструктор космических кораблей, главный разработчик первого спутника и корабля Юрия Гагарина.", "learned": false}
+                ]
+            },
+            "saints": {
+                "title": "Святые России",
+                "personalities": [
+                    {"id": 1, "name": "Святая княгиня Ольга", "dates": "890—969", "biography": "Древнерусская княгиня, регентша Киевской Руси, принявшая христианство и способствовавшая его распространению.", "learned": false},
+                    {"id": 2, "name": "Святой князь Владимир", "dates": "958—1015", "biography": "Креститель Руси, принявший христианство и крестивший весь народ русский в 988 году, святой покровитель России.", "learned": false},
+                    {"id": 3, "name": "Святой Сергий Радонежский", "dates": "1314—1392", "biography": "Русский монах, основатель Троице-Сергиевой лавры, духовный наставник и мудрец средневековой России.", "learned": false},
+                    {"id": 4, "name": "Святой Александр Невский", "dates": "1221—1263", "biography": "Русский князь и полководец, защитник Русской Земли, причисленный к лику святых за свои деяния.", "learned": false},
+                    {"id": 5, "name": "Святой Даниил Московский", "dates": "1261—1303", "biography": "Московский князь, основатель московского государства, основатель монастырей, святитель земли русской.", "learned": false},
+                    {"id": 6, "name": "Святой Дмитрий Солунский", "dates": "ок. 280—306", "biography": "Раннехристианский святой, покровитель воинов и героев, которому молились русские воины перед боями.", "learned": false},
+                    {"id": 7, "name": "Святая Татьяна", "dates": "ок. 226—235", "biography": "Ранняя христианская мученица, святая покровительница студентов и духовного образования в России.", "learned": false},
+                    {"id": 8, "name": "Святой Иоанн Креститель", "dates": "ок. 4 до н.э.—ок. 27 н.э.", "biography": "Предтеча Иисуса Христа, крестивший Иисуса, почитаемый на Руси как небесный покровитель русских князей.", "learned": false},
+                    {"id": 9, "name": "Святой Архангел Михаил", "dates": "вечен", "biography": "Архангел, предводитель небесных войск, защитник от зла, почитаемый на Руси как небесный защитник государства.", "learned": false},
+                    {"id": 10, "name": "Святой Николай Чудотворец", "dates": "ок. 280—343", "biography": "Раннехристианский святитель, известный своей благотворительностью, один из самых почитаемых святых на Руси.", "learned": false}
+                ]
+            }
+        };
+
+        const testQuestions = [
+            {
+                "id": 1,
+                "question": "Когда произошло призвание варягов?",
+                "answers": [
+                    {"text": "862 год", "correct": true},
+                    {"text": "882 год", "correct": false},
+                    {"text": "912 год", "correct": false},
+                    {"text": "945 год", "correct": false}
+                ]
+            },
+            {
+                "id": 2,
+                "question": "Какой князь объединил Новгород и Киев?",
+                "answers": [
+                    {"text": "Рюрик", "correct": false},
+                    {"text": "Олег", "correct": true},
+                    {"text": "Ярослав Мудрый", "correct": false},
+                    {"text": "Владимир Мономах", "correct": false}
+                ]
+            },
+            {
+                "id": 3,
+                "question": "В каком году произошла Невская битва?",
+                "answers": [
+                    {"text": "1223 год", "correct": false},
+                    {"text": "1237 год", "correct": false},
+                    {"text": "1240 год", "correct": true},
+                    {"text": "1242 год", "correct": false}
+                ]
+            },
+            {
+                "id": 4,
+                "question": "Когда было Ледовое побоище?",
+                "answers": [
+                    {"text": "1240 год", "correct": false},
+                    {"text": "1242 год", "correct": true},
+                    {"text": "1250 год", "correct": false},
+                    {"text": "1268 год", "correct": false}
+                ]
+            },
+            {
+                "id": 5,
+                "question": "Когда произошла Куликовская битва?",
+                "answers": [
+                    {"text": "1368 год", "correct": false},
+                    {"text": "1378 год", "correct": false},
+                    {"text": "1380 год", "correct": true},
+                    {"text": "1385 год", "correct": false}
+                ]
+            },
+            {
+                "id": 6,
+                "question": "Когда было 'Стояние на Угре'?",
+                "answers": [
+                    {"text": "1470 год", "correct": false},
+                    {"text": "1475 год", "correct": false},
+                    {"text": "1480 год", "correct": true},
+                    {"text": "1485 год", "correct": false}
+                ]
+            },
+            {
+                "id": 7,
+                "question": "Во время правления какого царя было стрелецкое войско создано?",
+                "answers": [
+                    {"text": "Ивана III", "correct": false},
+                    {"text": "Ивана IV", "correct": true},
+                    {"text": "Василия III", "correct": false},
+                    {"text": "Алексея Михайловича", "correct": false}
+                ]
+            },
+            {
+                "id": 8,
+                "question": "Когда Петр I провозгласил Россию империей?",
+                "answers": [
+                    {"text": "1700 год", "correct": false},
+                    {"text": "1710 год", "correct": false},
+                    {"text": "1721 год", "correct": true},
+                    {"text": "1725 год", "correct": false}
+                ]
+            },
+            {
+                "id": 9,
+                "question": "Какой из этих полководцев победил Наполеона в России?",
+                "answers": [
+                    {"text": "Кутузов", "correct": true},
+                    {"text": "Суворов", "correct": false},
+                    {"text": "Нельсон", "correct": false},
+                    {"text": "Барклай де Толли", "correct": false}
+                ]
+            },
+            {
+                "id": 10,
+                "question": "В каком году произошла Октябрьская революция?",
+                "answers": [
+                    {"text": "1905 год", "correct": false},
+                    {"text": "1915 год", "correct": false},
+                    {"text": "1917 год", "correct": true},
+                    {"text": "1920 год", "correct": false}
+                ]
+            }
+        ];
+
         // Application state
         let currentState = {
             currentPeriod: null,
@@ -672,14 +1379,46 @@
             learnedCards: JSON.parse(localStorage.getItem("learnedCards")) || {},
             swipeStartX: 0,
             swipeStartY: 0,
-            isSwiping: false
+            isSwiping: false,
+            // Test state
+            currentTestIndex: 0,
+            testScore: 0,
+            testAnswered: false,
+            testMode: false,
+            // Terms state
+            currentTermsCategory: null,
+            currentTermIndex: 0,
+            learnedTerms: JSON.parse(localStorage.getItem("learnedTerms")) || {},
+            termsMode: false,
+            // Personalities state
+            currentPersonalitiesCategory: null,
+            currentPersonalityIndex: 0,
+            learnedPersonalities: JSON.parse(localStorage.getItem("learnedPersonalities")) || {},
+            personalitiesMode: false
         };
 
         // DOM Elements
         const mainMenu = document.getElementById("mainMenu");
+        const datesScreen = document.getElementById("datesScreen");
+        const termsScreen = document.getElementById("termsScreen");
         const flashcardScreen = document.getElementById("flashcardScreen");
+        const termsFlashcardScreen = document.getElementById("termsFlashcardScreen");
+        const testScreen = document.getElementById("testScreen");
         const periodCards = document.querySelectorAll(".period-card");
+        const datesBtn = document.getElementById("datesBtn");
+        const termsBtn = document.getElementById("termsBtn");
+        const backFromDates = document.getElementById("backFromDates");
+        const backFromTerms = document.getElementById("backFromTerms");
         const backToMenuBtn = document.getElementById("backToMenu");
+        const backToMenuFromTestBtn = document.getElementById("backToMenuFromTest");
+        const backToMenuFromTermsBtn = document.getElementById("backToMenuFromTerms");
+        const startTestBtn = document.getElementById("startTestBtn");
+        const nextQuestionBtn = document.getElementById("nextQuestionBtn");
+        const retakeTestBtn = document.getElementById("retakeTestBtn");
+        const returnToMenuBtn = document.getElementById("returnToMenuBtn");
+        const termFlashcard = document.getElementById("termFlashcard");
+        const markTermAsLearnedBtn = document.getElementById("markTermAsLearned");
+        const resetTermProgressBtn = document.getElementById("resetTermProgress");
         const periodTitle = document.getElementById("periodTitle");
         const cardCounter = document.getElementById("cardCounter");
         const progressPercent = document.getElementById("progressPercent");
@@ -694,29 +1433,86 @@
         const closeStatsBtn = document.getElementById("closeStats");
         const statsContent = document.getElementById("statsContent");
         const resetAllProgressBtn = document.getElementById("resetAllProgress");
+        // Personalities elements
+        const personalitiesScreen = document.getElementById("personalitiesScreen");
+        const personalitiesFlashcardScreen = document.getElementById("personalitiesFlashcardScreen");
+        const personalitiesBtn = document.getElementById("personalitiesBtn");
+        const backFromPersonalities = document.getElementById("backFromPersonalities");
+        const backToMenuFromPersonalitiesBtn = document.getElementById("backToMenuFromPersonalities");
+        const personalityFlashcard = document.getElementById("personalityFlashcard");
+        const markPersonalityAsLearnedBtn = document.getElementById("markPersonalityAsLearned");
+        const resetPersonalityProgressBtn = document.getElementById("resetPersonalityProgress");
 
         // Initialize the application
         function initApp() {
             // Load learned cards from localStorage
             updateMainMenuStats();
             
-            // Add event listeners for period selection
-            periodCards.forEach(card => {
+            // Add event listeners for dates menu
+            datesBtn.addEventListener("click", showDatesScreen);
+            backFromDates.addEventListener("click", goBackToMenu);
+            
+            // Add event listeners for terms menu
+            termsBtn.addEventListener("click", showTermsScreen);
+            backFromTerms.addEventListener("click", goBackToMenu);
+            backToMenuFromTermsBtn.addEventListener("click", goBackToMenu);
+            
+            // Add event listeners for personalities menu
+            personalitiesBtn.addEventListener("click", showPersonalitiesScreen);
+            backFromPersonalities.addEventListener("click", goBackToMenu);
+            backToMenuFromPersonalitiesBtn.addEventListener("click", goBackToMenu);
+            
+            // Add event listeners for period selection (on both screens)
+            const allPeriodCards = document.querySelectorAll(".period-card[data-period]");
+            allPeriodCards.forEach(card => {
                 card.addEventListener("click", function() {
                     const periodId = this.getAttribute("data-period");
                     startPeriod(periodId);
                 });
             });
             
+            // Add event listeners for terms category selection
+            const termsCategoryCards = document.querySelectorAll("#termsScreen .period-card[data-category]");
+            termsCategoryCards.forEach(card => {
+                card.addEventListener("click", function() {
+                    const categoryId = this.getAttribute("data-category");
+                    startTermsCategory(categoryId);
+                });
+            });
+            
+            // Add event listeners for personalities category selection
+            const personalitiesCategoryCards = document.querySelectorAll("#personalitiesScreen .period-card[data-category]");
+            personalitiesCategoryCards.forEach(card => {
+                card.addEventListener("click", function() {
+                    const categoryId = this.getAttribute("data-category");
+                    startPersonalitiesCategory(categoryId);
+                });
+            });
+            
             // Add event listeners for navigation
             backToMenuBtn.addEventListener("click", goBackToMenu);
+            backToMenuFromTestBtn.addEventListener("click", goBackToMenu);
+            startTestBtn.addEventListener("click", startTest);
+            nextQuestionBtn.addEventListener("click", nextQuestion);
+            retakeTestBtn.addEventListener("click", startTest);
+            returnToMenuBtn.addEventListener("click", goBackToMenu);
             
             // Add event listener for card flip
             flashcard.addEventListener("click", flipCard);
+            termFlashcard.addEventListener("click", flipTermCard);
+            personalityFlashcard.addEventListener("click", flipPersonalityCard);
             
             // Add event listeners for card management
             markAsLearnedBtn.addEventListener("click", toggleCardLearnedStatus);
             resetProgressBtn.addEventListener("click", resetCurrentCardProgress);
+            
+            // Add event listeners for term management
+            markTermAsLearnedBtn.addEventListener("click", toggleTermLearnedStatus);
+            resetTermProgressBtn.addEventListener("click", resetCurrentTermProgress);
+            
+            // Add event listeners for personality management
+            markPersonalityAsLearnedBtn.addEventListener("click", togglePersonalityLearnedStatus);
+            resetPersonalityProgressBtn.addEventListener("click", resetCurrentPersonalityProgress);
             
             // Add event listeners for statistics
             closeStatsBtn.addEventListener("click", () => {
@@ -727,6 +1523,8 @@
             
             // Add touch events for swipe navigation
             setupSwipeNavigation();
+            setupTermsSwipeNavigation();
+            setupPersonalitiesSwipeNavigation();
             
             // Close modal when clicking outside
             statsModal.addEventListener("click", (e) => {
@@ -736,6 +1534,15 @@
             });
         }
 
+        // Show dates screen
+        function showDatesScreen() {
+            mainMenu.classList.add("hidden");
+            datesScreen.classList.remove("hidden");
+            termsScreen.classList.add("hidden");
+            personalitiesScreen.classList.add("hidden");
+            testScreen.classList.add("hidden");
+        }
+
         // Start a period (show flashcards)
         function startPeriod(periodId) {
             currentState.currentPeriod = periodId;
@@ -743,6 +1550,12 @@
             
             // Update UI
             mainMenu.classList.add("hidden");
+            datesScreen.classList.add("hidden");
+            termsScreen.classList.add("hidden");
+            personalitiesScreen.classList.add("hidden");
+            testScreen.classList.add("hidden");
+            termsFlashcardScreen.classList.add("hidden");
+            personalitiesFlashcardScreen.classList.add("hidden");
             flashcardScreen.classList.remove("hidden");
             
             // Update period title
@@ -753,11 +1566,314 @@
             showCurrentCard();
         }
 
+        // Show terms screen
+        function showTermsScreen() {
+            mainMenu.classList.add("hidden");
+            termsScreen.classList.remove("hidden");
+            datesScreen.classList.add("hidden");
+            personalitiesScreen.classList.add("hidden");
+            testScreen.classList.add("hidden");
+        }
+
+        // Show personalities screen
+        function showPersonalitiesScreen() {
+            mainMenu.classList.add("hidden");
+            personalitiesScreen.classList.remove("hidden");
+            datesScreen.classList.add("hidden");
+            termsScreen.classList.add("hidden");
+            testScreen.classList.add("hidden");
+        }
+
+        // Start terms category (show term flashcards)
+        function startTermsCategory(categoryId) {
+            currentState.currentTermsCategory = categoryId;
+            currentState.currentTermIndex = 0;
+            currentState.termsMode = true;
+            
+            // Update UI
+            mainMenu.classList.add("hidden");
+            datesScreen.classList.add("hidden");
+            termsScreen.classList.add("hidden");
+            personalitiesScreen.classList.add("hidden");
+            flashcardScreen.classList.add("hidden");
+            testScreen.classList.add("hidden");
+            personalitiesFlashcardScreen.classList.add("hidden");
+            termsFlashcardScreen.classList.remove("hidden");
+            
+            // Update category title
+            const category = termsData[categoryId];
+            document.getElementById("termsCategoryTitle").textContent = category.title;
+            
+            // Show first term
+            showCurrentTerm();
+        }
+
+        // Show current term
+        function showCurrentTerm() {
+            if (!currentState.currentTermsCategory) return;
+            
+            const category = termsData[currentState.currentTermsCategory];
+            const term = category.terms[currentState.currentTermIndex];
+            
+            // Update term content
+            document.getElementById("termName").textContent = term.name;
+            document.getElementById("termDefinition").textContent = term.definition;
+            
+            // Update term counter
+            document.getElementById("termsCounter").textContent = `Термин ${currentState.currentTermIndex + 1} из ${category.terms.length}`;
+            
+            // Update progress
+            const learnedCount = getLearnedTermsCount(currentState.currentTermsCategory);
+            const progress = Math.round((learnedCount / category.terms.length) * 100);
+            document.getElementById("termsProgressPercent").textContent = `${progress}%`;
+            document.getElementById("termsProgressBar").style.width = `${progress}%`;
+            
+            // Update "Mark as learned" button
+            const termKey = `${currentState.currentTermsCategory}-${term.id}`;
+            const isLearned = currentState.learnedTerms[termKey] || false;
+            updateMarkTermAsLearnedButton(isLearned);
+            
+            // Reset card to front side
+            termFlashcard.classList.remove("flipped");
+        }
+
+        // Flip term card
+        function flipTermCard() {
+            termFlashcard.classList.toggle("flipped");
+        }
+
+        // Toggle term learned status
+        function toggleTermLearnedStatus() {
+            const category = termsData[currentState.currentTermsCategory];
+            const term = category.terms[currentState.currentTermIndex];
+            const termKey = `${currentState.currentTermsCategory}-${term.id}`;
+            
+            currentState.learnedTerms[termKey] = !currentState.learnedTerms[termKey];
+            localStorage.setItem("learnedTerms", JSON.stringify(currentState.learnedTerms));
+            
+            updateMarkTermAsLearnedButton(currentState.learnedTerms[termKey]);
+            showCurrentTerm();
+        }
+
+        // Update "Mark as learned" button
+        function updateMarkTermAsLearnedButton(isLearned) {
+            if (isLearned) {
+                markTermAsLearnedBtn.innerHTML = '<i class="fas fa-check-circle mr-2"></i>Выучено';
+                markTermAsLearnedBtn.classList.remove("bg-green-100", "text-green-800");
+                markTermAsLearnedBtn.classList.add("bg-green-500", "text-white");
+            } else {
+                markTermAsLearnedBtn.innerHTML = '<i class="fas fa-check mr-2"></i>Выучено';
+                markTermAsLearnedBtn.classList.remove("bg-green-500", "text-white");
+                markTermAsLearnedBtn.classList.add("bg-green-100", "text-green-800");
+            }
+        }
+
+        // Reset progress for current term category
+        function resetCurrentTermProgress() {
+            const category = termsData[currentState.currentTermsCategory];
+            
+            category.terms.forEach(term => {
+                const termKey = `${currentState.currentTermsCategory}-${term.id}`;
+                delete currentState.learnedTerms[termKey];
+            });
+            
+            localStorage.setItem("learnedTerms", JSON.stringify(currentState.learnedTerms));
+            showCurrentTerm();
+        }
+
+        // Show previous term
+        function showPreviousTerm() {
+            if (currentState.currentTermIndex > 0) {
+                const category = termsData[currentState.currentTermsCategory];
+                currentState.currentTermIndex--;
+                showCurrentTerm();
+            }
+        }
+
+        // Show next term
+        function showNextTerm() {
+            const category = termsData[currentState.currentTermsCategory];
+            if (currentState.currentTermIndex < category.terms.length - 1) {
+                currentState.currentTermIndex++;
+                showCurrentTerm();
+            }
+        }
+
+        // Get count of learned terms
+        function getLearnedTermsCount(categoryId) {
+            const category = termsData[categoryId];
+            let count = 0;
+            
+            category.terms.forEach(term => {
+                const termKey = `${categoryId}-${term.id}`;
+                if (currentState.learnedTerms[termKey]) {
+                    count++;
+                }
+            });
+            
+            return count;
+        }
+
+        // Start personalities category
+        function startPersonalitiesCategory(categoryId) {
+            currentState.currentPersonalitiesCategory = categoryId;
+            currentState.currentPersonalityIndex = 0;
+            currentState.personalitiesMode = true;
+            
+            // Update UI
+            mainMenu.classList.add("hidden");
+            datesScreen.classList.add("hidden");
+            termsScreen.classList.add("hidden");
+            personalitiesScreen.classList.add("hidden");
+            flashcardScreen.classList.add("hidden");
+            testScreen.classList.add("hidden");
+            personalitiesFlashcardScreen.classList.remove("hidden");
+            
+            // Update category title
+            const category = personalitiesData[categoryId];
+            document.getElementById("personalitiesCategoryTitle").textContent = category.title;
+            
+            // Show first personality
+            showCurrentPersonality();
+        }
+
+        // Show current personality
+        function showCurrentPersonality() {
+            if (!currentState.currentPersonalitiesCategory) return;
+            
+            const category = personalitiesData[currentState.currentPersonalitiesCategory];
+            const personality = category.personalities[currentState.currentPersonalityIndex];
+            
+            // Update personality content
+            document.getElementById("personalityName").textContent = personality.name;
+            document.getElementById("personalityDates").textContent = personality.dates;
+            document.getElementById("personalityBiography").textContent = personality.biography;
+            
+            // Update personality counter
+            document.getElementById("personalitiesCounter").textContent = `Личность ${currentState.currentPersonalityIndex + 1} из ${category.personalities.length}`;
+            
+            // Update progress
+            const learnedCount = getLearnedPersonalitiesCount(currentState.currentPersonalitiesCategory);
+            const progress = Math.round((learnedCount / category.personalities.length) * 100);
+            document.getElementById("personalitiesProgressPercent").textContent = progress + "%";
+            document.getElementById("personalitiesProgressBar").style.width = progress + "%";
+            
+            // Reset card flip
+            personalityFlashcard.classList.remove("flipped");
+            
+            // Update button state
+            updateMarkPersonalityAsLearnedButton();
+        }
+
+        // Flip personality card
+        function flipPersonalityCard() {
+            personalityFlashcard.classList.toggle("flipped");
+        }
+
+        // Mark personality as learned
+        function togglePersonalityLearnedStatus() {
+            if (!currentState.currentPersonalitiesCategory) return;
+            
+            const category = personalitiesData[currentState.currentPersonalitiesCategory];
+            const personality = category.personalities[currentState.currentPersonalityIndex];
+            const personalityKey = `${currentState.currentPersonalitiesCategory}-${personality.id}`;
+            
+            if (currentState.learnedPersonalities[personalityKey]) {
+                delete currentState.learnedPersonalities[personalityKey];
+                personality.learned = false;
+            } else {
+                currentState.learnedPersonalities[personalityKey] = true;
+                personality.learned = true;
+            }
+            
+            localStorage.setItem("learnedPersonalities", JSON.stringify(currentState.learnedPersonalities));
+            updateMarkPersonalityAsLearnedButton();
+            showCurrentPersonality();
+        }
+
+        // Update "Mark as Learned" button appearance
+        function updateMarkPersonalityAsLearnedButton() {
+            if (!currentState.currentPersonalitiesCategory) return;
+            
+            const category = personalitiesData[currentState.currentPersonalitiesCategory];
+            const personality = category.personalities[currentState.currentPersonalityIndex];
+            const personalityKey = `${currentState.currentPersonalitiesCategory}-${personality.id}`;
+            
+            if (currentState.learnedPersonalities[personalityKey]) {
+                markPersonalityAsLearnedBtn.classList.remove("bg-green-100", "text-green-800");
+                markPersonalityAsLearnedBtn.classList.add("bg-green-500", "text-white");
+                markPersonalityAsLearnedBtn.innerHTML = '<i class="fas fa-check mr-2"></i>Выучено';
+            } else {
+                markPersonalityAsLearnedBtn.classList.add("bg-green-100", "text-green-800");
+                markPersonalityAsLearnedBtn.classList.remove("bg-green-500", "text-white");
+                markPersonalityAsLearnedBtn.innerHTML = '<i class="fas fa-check mr-2"></i>Выучено';
+            }
+        }
+
+        // Reset current personality progress
+        function resetCurrentPersonalityProgress() {
+            if (!currentState.currentPersonalitiesCategory) return;
+            
+            if (confirm("Вы уверены? Это удалит отметку о том, что вы выучили эту личность.")) {
+                const category = personalitiesData[currentState.currentPersonalitiesCategory];
+                const personality = category.personalities[currentState.currentPersonalityIndex];
+                const personalityKey = `${currentState.currentPersonalitiesCategory}-${personality.id}`;
+                
+                delete currentState.learnedPersonalities[personalityKey];
+                personality.learned = false;
+                localStorage.setItem("learnedPersonalities", JSON.stringify(currentState.learnedPersonalities));
+                showCurrentPersonality();
+            }
+        }
+
+        // Get learned personalities count
+        function getLearnedPersonalitiesCount(categoryId) {
+            const category = personalitiesData[categoryId];
+            let count = 0;
+            
+            category.personalities.forEach(personality => {
+                const personalityKey = `${categoryId}-${personality.id}`;
+                if (currentState.learnedPersonalities[personalityKey]) {
+                    count++;
+                }
+            });
+            
+            return count;
+        }
+
+        // Show previous personality
+        function showPreviousPersonality() {
+            if (currentState.currentPersonalityIndex > 0) {
+                const category = personalitiesData[currentState.currentPersonalitiesCategory];
+                currentState.currentPersonalityIndex--;
+                showCurrentPersonality();
+            }
+        }
+
+        // Show next personality
+        function showNextPersonality() {
+            const category = personalitiesData[currentState.currentPersonalitiesCategory];
+            if (currentState.currentPersonalityIndex < category.personalities.length - 1) {
+                currentState.currentPersonalityIndex++;
+                showCurrentPersonality();
+            }
+        }
+
         // Go back to main menu
         function goBackToMenu() {
             flashcardScreen.classList.add("hidden");
+            datesScreen.classList.add("hidden");
+            termsScreen.classList.add("hidden");
+            termsFlashcardScreen.classList.add("hidden");
+            personalitiesScreen.classList.add("hidden");
+            personalitiesFlashcardScreen.classList.add("hidden");
+            testScreen.classList.add("hidden");
+            statsModal.classList.add("hidden");
             mainMenu.classList.remove("hidden");
             updateMainMenuStats();
+            currentState.testMode = false;
+            currentState.termsMode = false;
+            currentState.personalitiesMode = false;
         }
 
         // Show current card based on state
@@ -881,8 +1997,19 @@
         function updateMainMenuStats() {
             let totalLearned = 0;
             
+            // Count learned cards from history periods
             Object.keys(historyPeriods).forEach(periodId => {
                 totalLearned += getLearnedCardsCount(periodId);
+            });
+            
+            // Count learned terms
+            Object.keys(termsData).forEach(categoryId => {
+                totalLearned += getLearnedTermsCount(categoryId);
+            });
+            
+            // Count learned personalities
+            Object.keys(personalitiesData).forEach(categoryId => {
+                totalLearned += getLearnedPersonalitiesCount(categoryId);
             });
             
             // Update stats display
@@ -1075,6 +2202,330 @@
             });
         }
 
+        // Setup swipe navigation for terms
+        function setupTermsSwipeNavigation() {
+            const container = document.getElementById("termFlashcardContainer");
+            let touchStartX = 0;
+            let touchStartY = 0;
+            let currentX = 0;
+            let currentY = 0;
+            let velocityX = 0;
+            let velocityY = 0;
+            let lastX = 0;
+            let lastY = 0;
+            let lastTime = 0;
+            let isAnimating = false;
+            let hasMovedCard = false;
+            
+            container.addEventListener("touchstart", (e) => {
+                if (isAnimating) return;
+                
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+                currentX = 0;
+                currentY = 0;
+                lastX = touchStartX;
+                lastY = touchStartY;
+                lastTime = Date.now();
+                hasMovedCard = false;
+                
+                termFlashcard.style.transition = "none";
+            });
+            
+            container.addEventListener("touchmove", (e) => {
+                if (isAnimating) return;
+                
+                const currentTouchX = e.touches[0].clientX;
+                const currentTouchY = e.touches[0].clientY;
+                
+                currentX = currentTouchX - touchStartX;
+                currentY = currentTouchY - touchStartY;
+                
+                if (Math.abs(currentX) > 5 || Math.abs(currentY) > 5) {
+                    hasMovedCard = true;
+                    e.preventDefault();
+                }
+                
+                if (hasMovedCard) {
+                    const now = Date.now();
+                    const timeDelta = Math.max(now - lastTime, 1);
+                    
+                    if (timeDelta > 0) {
+                        velocityX = (currentTouchX - lastX) / timeDelta;
+                        velocityY = (currentTouchY - lastY) / timeDelta;
+                    }
+                    
+                    lastX = currentTouchX;
+                    lastY = currentTouchY;
+                    lastTime = now;
+                    
+                    const distance = Math.sqrt(currentX * currentX + currentY * currentY);
+                    const maxDistance = 250;
+                    const opacity = Math.max(0.2, 1 - (distance / maxDistance));
+                    
+                    termFlashcard.style.transform = `translate(${currentX}px, ${currentY}px)`;
+                    termFlashcard.style.opacity = opacity;
+                }
+            });
+            
+            container.addEventListener("touchend", (e) => {
+                if (isAnimating) return;
+                
+                if (!hasMovedCard) {
+                    return;
+                }
+                
+                const finalX = currentX;
+                const finalY = currentY;
+                const distance = Math.sqrt(finalX * finalX + finalY * finalY);
+                const changeThreshold = 100;
+                
+                const inertiaX = velocityX * 500;
+                const inertiaY = velocityY * 500;
+                const totalSwipeX = finalX + inertiaX;
+                const totalSwipeY = finalY + inertiaY;
+                
+                const isVerticalSwipe = Math.abs(totalSwipeY) > Math.abs(totalSwipeX);
+                const isHorizontalSwipe = Math.abs(totalSwipeX) > Math.abs(totalSwipeY);
+                
+                if (isVerticalSwipe && Math.abs(totalSwipeY) > changeThreshold) {
+                    isAnimating = true;
+                    flipTermCard();
+                    
+                    setTimeout(() => {
+                        isAnimating = false;
+                    }, 600);
+                    
+                    termFlashcard.style.transition = "all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                    termFlashcard.style.transform = `translate(0, 0)`;
+                    termFlashcard.style.opacity = "1";
+                    
+                    return;
+                }
+                
+                if (isHorizontalSwipe && Math.abs(totalSwipeX) > changeThreshold) {
+                    isAnimating = true;
+                    termFlashcard.style.transition = "all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                    
+                    if (totalSwipeX > 0) {
+                        termFlashcard.style.transform = `translate(${window.innerWidth}px, ${finalY}px)`;
+                        termFlashcard.style.opacity = "0";
+                        
+                        setTimeout(() => {
+                            termFlashcard.style.transition = "none";
+                            termFlashcard.style.transform = `translate(-${window.innerWidth}px, 0)`;
+                            termFlashcard.style.opacity = "0";
+                            showPreviousTerm();
+                            
+                            setTimeout(() => {
+                                termFlashcard.style.transition = "all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                                termFlashcard.style.transform = `translate(0, 0)`;
+                                termFlashcard.style.opacity = "1";
+                            }, 10);
+                            
+                            setTimeout(() => {
+                                termFlashcard.style.transition = "none";
+                                isAnimating = false;
+                            }, 610);
+                        }, 600);
+                    } else {
+                        termFlashcard.style.transform = `translate(-${window.innerWidth}px, ${finalY}px)`;
+                        termFlashcard.style.opacity = "0";
+                        
+                        setTimeout(() => {
+                            termFlashcard.style.transition = "none";
+                            termFlashcard.style.transform = `translate(${window.innerWidth}px, 0)`;
+                            termFlashcard.style.opacity = "0";
+                            showNextTerm();
+                            
+                            setTimeout(() => {
+                                termFlashcard.style.transition = "all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                                termFlashcard.style.transform = `translate(0, 0)`;
+                                termFlashcard.style.opacity = "1";
+                            }, 10);
+                            
+                            setTimeout(() => {
+                                termFlashcard.style.transition = "none";
+                                isAnimating = false;
+                            }, 610);
+                        }, 600);
+                    }
+                } else {
+                    isAnimating = true;
+                    termFlashcard.style.transition = "all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                    termFlashcard.style.transform = `translate(0, 0)`;
+                    termFlashcard.style.opacity = "1";
+                    
+                    setTimeout(() => {
+                        termFlashcard.style.transition = "none";
+                        isAnimating = false;
+                    }, 400);
+                }
+            });
+        }
+
+        // Setup swipe navigation for personalities
+        function setupPersonalitiesSwipeNavigation() {
+            const container = document.getElementById("personalityFlashcardContainer");
+            let touchStartX = 0;
+            let touchStartY = 0;
+            let currentX = 0;
+            let currentY = 0;
+            let velocityX = 0;
+            let velocityY = 0;
+            let lastX = 0;
+            let lastY = 0;
+            let lastTime = 0;
+            let isAnimating = false;
+            let hasMovedCard = false;
+            
+            container.addEventListener("touchstart", (e) => {
+                if (isAnimating) return;
+                
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+                currentX = 0;
+                currentY = 0;
+                lastX = touchStartX;
+                lastY = touchStartY;
+                lastTime = Date.now();
+                hasMovedCard = false;
+                
+                personalityFlashcard.style.transition = "none";
+            });
+            
+            container.addEventListener("touchmove", (e) => {
+                if (isAnimating) return;
+                
+                const currentTouchX = e.touches[0].clientX;
+                const currentTouchY = e.touches[0].clientY;
+                
+                currentX = currentTouchX - touchStartX;
+                currentY = currentTouchY - touchStartY;
+                
+                if (Math.abs(currentX) > 5 || Math.abs(currentY) > 5) {
+                    hasMovedCard = true;
+                    e.preventDefault();
+                }
+                
+                if (hasMovedCard) {
+                    const now = Date.now();
+                    const timeDelta = Math.max(now - lastTime, 1);
+                    
+                    if (timeDelta > 0) {
+                        velocityX = (currentTouchX - lastX) / timeDelta;
+                        velocityY = (currentTouchY - lastY) / timeDelta;
+                    }
+                    
+                    lastX = currentTouchX;
+                    lastY = currentTouchY;
+                    lastTime = now;
+                    
+                    const distance = Math.sqrt(currentX * currentX + currentY * currentY);
+                    const maxDistance = 250;
+                    const opacity = Math.max(0.2, 1 - (distance / maxDistance));
+                    
+                    personalityFlashcard.style.transform = `translate(${currentX}px, ${currentY}px)`;
+                    personalityFlashcard.style.opacity = opacity;
+                }
+            });
+            
+            container.addEventListener("touchend", (e) => {
+                if (isAnimating) return;
+                
+                if (!hasMovedCard) {
+                    return;
+                }
+                
+                const finalX = currentX;
+                const finalY = currentY;
+                const distance = Math.sqrt(finalX * finalX + finalY * finalY);
+                const changeThreshold = 100;
+                
+                const inertiaX = velocityX * 500;
+                const inertiaY = velocityY * 500;
+                const totalSwipeX = finalX + inertiaX;
+                const totalSwipeY = finalY + inertiaY;
+                
+                const isVerticalSwipe = Math.abs(totalSwipeY) > Math.abs(totalSwipeX);
+                const isHorizontalSwipe = Math.abs(totalSwipeX) > Math.abs(totalSwipeY);
+                
+                if (isVerticalSwipe && Math.abs(totalSwipeY) > changeThreshold) {
+                    isAnimating = true;
+                    flipPersonalityCard();
+                    
+                    setTimeout(() => {
+                        isAnimating = false;
+                    }, 600);
+                    
+                    personalityFlashcard.style.transition = "all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                    personalityFlashcard.style.transform = `translate(0, 0)`;
+                    personalityFlashcard.style.opacity = "1";
+                    
+                    return;
+                }
+                
+                if (isHorizontalSwipe && Math.abs(totalSwipeX) > changeThreshold) {
+                    isAnimating = true;
+                    personalityFlashcard.style.transition = "all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                    
+                    if (totalSwipeX > 0) {
+                        personalityFlashcard.style.transform = `translate(${window.innerWidth}px, ${finalY}px)`;
+                        personalityFlashcard.style.opacity = "0";
+                        
+                        setTimeout(() => {
+                            personalityFlashcard.style.transition = "none";
+                            personalityFlashcard.style.transform = `translate(-${window.innerWidth}px, 0)`;
+                            personalityFlashcard.style.opacity = "0";
+                            showPreviousPersonality();
+                            
+                            setTimeout(() => {
+                                personalityFlashcard.style.transition = "all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                                personalityFlashcard.style.transform = `translate(0, 0)`;
+                                personalityFlashcard.style.opacity = "1";
+                            }, 10);
+                            
+                            setTimeout(() => {
+                                personalityFlashcard.style.transition = "none";
+                                isAnimating = false;
+                            }, 610);
+                        }, 600);
+                    } else {
+                        personalityFlashcard.style.transform = `translate(-${window.innerWidth}px, ${finalY}px)`;
+                        personalityFlashcard.style.opacity = "0";
+                        
+                        setTimeout(() => {
+                            personalityFlashcard.style.transition = "none";
+                            personalityFlashcard.style.transform = `translate(${window.innerWidth}px, 0)`;
+                            personalityFlashcard.style.opacity = "0";
+                            showNextPersonality();
+                            
+                            setTimeout(() => {
+                                personalityFlashcard.style.transition = "all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                                personalityFlashcard.style.transform = `translate(0, 0)`;
+                                personalityFlashcard.style.opacity = "1";
+                            }, 10);
+                            
+                            setTimeout(() => {
+                                personalityFlashcard.style.transition = "none";
+                                isAnimating = false;
+                            }, 610);
+                        }, 600);
+                    }
+                } else {
+                    isAnimating = true;
+                    personalityFlashcard.style.transition = "all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)";
+                    personalityFlashcard.style.transform = `translate(0, 0)`;
+                    personalityFlashcard.style.opacity = "1";
+                    
+                    setTimeout(() => {
+                        personalityFlashcard.style.transition = "none";
+                        isAnimating = false;
+                    }, 400);
+                }
+            });
+        }
+
         // Reset all progress
         function resetAllProgress() {
             if (confirm("Вы уверены? Это удалит всю историю обучения.")) {
@@ -1086,6 +2537,103 @@
                 }
                 statsModal.classList.add("hidden");
             }
+        }
+
+        // === TEST FUNCTIONS ===
+        function startTest() {
+            currentState.testMode = true;
+            currentState.currentTestIndex = 0;
+            currentState.testScore = 0;
+            currentState.testAnswered = false;
+            
+            mainMenu.classList.add("hidden");
+            datesScreen.classList.add("hidden");
+            termsScreen.classList.add("hidden");
+            personalitiesScreen.classList.add("hidden");
+            flashcardScreen.classList.add("hidden");
+            termsFlashcardScreen.classList.add("hidden");
+            personalitiesFlashcardScreen.classList.add("hidden");
+            testScreen.classList.remove("hidden");
+            
+            showTestQuestion();
+        }
+
+        function showTestQuestion() {
+            if (currentState.currentTestIndex >= testQuestions.length) {
+                showTestComplete();
+                return;
+            }
+            
+            const question = testQuestions[currentState.currentTestIndex];
+            const progress = Math.round(((currentState.currentTestIndex + 1) / testQuestions.length) * 100);
+            
+            document.getElementById("testTitle").textContent = "Тест";
+            document.getElementById("testCounter").textContent = `Вопрос ${currentState.currentTestIndex + 1} из ${testQuestions.length}`;
+            document.getElementById("testProgressPercent").textContent = `${progress}%`;
+            document.getElementById("testProgressBar").style.width = `${progress}%`;
+            
+            document.getElementById("questionText").textContent = question.question;
+            document.getElementById("resultScreen").classList.add("hidden");
+            document.getElementById("questionContainer").classList.remove("hidden");
+            
+            const answersContainer = document.getElementById("answersContainer");
+            answersContainer.innerHTML = "";
+            
+            question.answers.forEach((answer, index) => {
+                const btn = document.createElement("button");
+                btn.className = "w-full p-4 text-left bg-gray-100 border-2 border-gray-200 rounded-lg transition-all duration-200 hover:bg-gray-200 active:scale-95";
+                btn.textContent = answer.text;
+                btn.onclick = () => checkAnswer(index, answer.correct);
+                answersContainer.appendChild(btn);
+            });
+            
+            currentState.testAnswered = false;
+        }
+
+        function checkAnswer(answerIndex, isCorrect) {
+            if (currentState.testAnswered) return;
+            
+            currentState.testAnswered = true;
+            
+            const answersContainer = document.getElementById("answersContainer");
+            const buttons = answersContainer.querySelectorAll("button");
+            
+            buttons[answerIndex].classList.remove("bg-gray-100", "border-gray-200");
+            
+            if (isCorrect) {
+                currentState.testScore++;
+                buttons[answerIndex].classList.add("bg-green-500", "border-green-600", "text-white");
+                document.getElementById("resultIcon").className = "fas fa-check-circle text-6xl text-green-500 mb-4";
+                document.getElementById("resultText").textContent = "Правильно!";
+                document.getElementById("resultMessage").textContent = "Отличный ответ!";
+            } else {
+                buttons[answerIndex].classList.add("bg-red-500", "border-red-600", "text-white");
+                // Show correct answer
+                const correctAnswer = testQuestions[currentState.currentTestIndex].answers.findIndex(a => a.correct);
+                buttons[correctAnswer].classList.remove("bg-gray-100", "border-gray-200");
+                buttons[correctAnswer].classList.add("bg-green-500", "border-green-600", "text-white");
+                
+                document.getElementById("resultIcon").className = "fas fa-times-circle text-6xl text-red-500 mb-4";
+                document.getElementById("resultText").textContent = "Неправильно";
+                document.getElementById("resultMessage").textContent = testQuestions[currentState.currentTestIndex].answers[correctAnswer].text + " - правильный ответ";
+            }
+            
+            document.getElementById("questionContainer").classList.add("hidden");
+            document.getElementById("resultScreen").classList.remove("hidden");
+        }
+
+        function nextQuestion() {
+            currentState.currentTestIndex++;
+            showTestQuestion();
+        }
+
+        function showTestComplete() {
+            document.getElementById("questionContainer").classList.add("hidden");
+            document.getElementById("resultScreen").classList.add("hidden");
+            document.getElementById("testCompleteScreen").classList.remove("hidden");
+            
+            const percentage = Math.round((currentState.testScore / testQuestions.length) * 100);
+            document.getElementById("finalScore").textContent = `${currentState.testScore}/${testQuestions.length}`;
         }
 
         // Initialize the application when DOM is ready
